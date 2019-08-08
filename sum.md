@@ -1,0 +1,18 @@
+   |People|Joy|Red|Lesser Fortune|White|Loss|Conjunction|Dragon's Tail|Sorrow|Prison|Gain|Boy|Greater Fortune|Girl|Dragon's Head|Way
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
+People|People|Joy|Red|Lesser Fortune|White|Loss|Conjunction|Dragon's Tail|Sorrow|Prison|Gain|Boy|Greater Fortune|Girl|Dragon's Head|Way
+Joy|Joy|People|Lesser Fortune|Red|Loss|White|Dragon's Tail|Conjunction|Prison|Sorrow|Boy|Gain|Girl|Greater Fortune|Way|Dragon's Head
+Red|Red|Lesser Fortune|People|Joy|Conjunction|Dragon's Tail|White|Loss|Gain|Boy|Sorrow|Prison|Dragon's Head|Way|Greater Fortune|Girl
+Lesser Fortune|Lesser Fortune|Red|Joy|People|Dragon's Tail|Conjunction|Loss|White|Boy|Gain|Prison|Sorrow|Way|Dragon's Head|Girl|Greater Fortune
+White|White|Loss|Conjunction|Dragon's Tail|People|Joy|Red|Lesser Fortune|Greater Fortune|Girl|Dragon's Head|Way|Sorrow|Prison|Gain|Boy
+Loss|Loss|White|Dragon's Tail|Conjunction|Joy|People|Lesser Fortune|Red|Girl|Greater Fortune|Way|Dragon's Head|Prison|Sorrow|Boy|Gain
+Conjunction|Conjunction|Dragon's Tail|White|Loss|Red|Lesser Fortune|People|Joy|Dragon's Head|Way|Greater Fortune|Girl|Gain|Boy|Sorrow|Prison
+Dragon's Tail|Dragon's Tail|Conjunction|Loss|White|Lesser Fortune|Red|Joy|People|Way|Dragon's Head|Girl|Greater Fortune|Boy|Gain|Prison|Sorrow
+Sorrow|Sorrow|Prison|Gain|Boy|Greater Fortune|Girl|Dragon's Head|Way|People|Joy|Red|Lesser Fortune|White|Loss|Conjunction|Dragon's Tail
+Prison|Prison|Sorrow|Boy|Gain|Girl|Greater Fortune|Way|Dragon's Head|Joy|People|Lesser Fortune|Red|Loss|White|Dragon's Tail|Conjunction
+Gain|Gain|Boy|Sorrow|Prison|Dragon's Head|Way|Greater Fortune|Girl|Red|Lesser Fortune|People|Joy|Conjunction|Dragon's Tail|White|Loss
+Boy|Boy|Gain|Prison|Sorrow|Way|Dragon's Head|Girl|Greater Fortune|Lesser Fortune|Red|Joy|People|Dragon's Tail|Conjunction|Loss|White
+Greater Fortune|Greater Fortune|Girl|Dragon's Head|Way|Sorrow|Prison|Gain|Boy|White|Loss|Conjunction|Dragon's Tail|People|Joy|Red|Lesser Fortune
+Girl|Girl|Greater Fortune|Way|Dragon's Head|Prison|Sorrow|Boy|Gain|Loss|White|Dragon's Tail|Conjunction|Joy|People|Lesser Fortune|Red
+Dragon's Head|Dragon's Head|Way|Greater Fortune|Girl|Gain|Boy|Sorrow|Prison|Conjunction|Dragon's Tail|White|Loss|Red|Lesser Fortune|People|Joy
+Way|Way|Dragon's Head|Girl|Greater Fortune|Boy|Gain|Prison|Sorrow|Dragon's Tail|Conjunction|Loss|White|Lesser Fortune|Red|Joy|People
