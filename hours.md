@@ -1,26 +1,30 @@
-Hour|Sunday        |Monday    |Tuesday   |Wednesday   |Thursday  |Friday    |Saturday
-----|--------------|----------|----------|------------|----------|----------|----------
-☼ 1 |**G. Fortune**|**Way**   |**Red**   |**White**   |**Joy**   |**Girl**  |**Sorrow**
-☼ 2 |Loss          |Prison    |L. Fortune|People      |Boy       |Conjunc.  |Gain
-☼ 3 |White         |Joy       |Girl      |Sorrow      |L. Fortune|Way       |Red
-☼ 4 |People        |Boy       |White     |Joy         |Loss      |Prison    |G. Fortune
-☼ 5 |Prison        |G. Fortune|Way       |Boy         |White     |Joy       |Girl
-☼ 6 |Gain          |Loss      |D.'s Tail |G. Fortune  |People    |Boy       |Conjunc.
-☼ 7 |Red           |White     |Gain      |Girl        |Sorrow    |L. Fortune|Way
-☼ 8 |**L. Fortune**|**People**|**Boy**   |**Conjunc.**|**Gain**  |**Loss**  |**Prison**
-☼ 9 |Girl          |Sorrow    |G. Fortune|Way         |Red       |White     |Joy
-☼ 10|Conjunc.      |Gain      |Loss      |Prison      |G. Fortune|People    |Boy
-☼ 11|Way           |Red       |Conjunc.  |Gain        |Girl      |Sorrow    |D.'s Tail
-☼ 12|Sorrow        |L. Fortune|People    |Red         |Conjunc.  |Gain      |Loss
-☽ 1 |Joy           |Girl      |Sorrow    |L. Fortune  |Way       |Red       |White
-☽ 2 |Boy           |White     |Joy       |Loss        |Prison    |G. Fortune|Way
-☽ 3 |**G. Fortune**|**Way**   |**Red**   |**White**   |**Joy**   |**Girl**  |**Sorrow**
-☽ 4 |Loss          |D.'s Tail |G. Fortune|People      |Boy       |Conjunc.  |Gain
-☽ 5 |White         |Joy       |Girl      |Sorrow      |L. Fortune|Way       |Red
-☽ 6 |People        |Boy       |White     |Gain        |Loss      |Prison    |D.'s Head
-☽ 7 |Prison        |G. Fortune|Way       |Red         |White     |Joy       |Girl
-☽ 8 |Gain          |Loss      |Prison    |G. Fortune  |People    |Boy       |Conjunc.
-☽ 9 |Red           |Conjunc.  |Gain      |Girl        |Loss      |G. Fortune|People
-☽ 10|**L. Fortune**|**People**|D.'s Tail |**Conjunc.**|**Gain**  |**Loss**  |**Prison**
-☽ 11|Girl          |Prison    |L. Fortune|Way         |Red       |White     |Joy
-☽ 12|Conjunc.      |D.'s Head |Loss      |Prison      |G. Fortune|People    |Boy
+Hour|Sunday       |Monday    |Tuesday  |Wednesday   |Thursday |Friday   |Saturday
+----|-------------|----------|---------|------------|---------|---------|----------
+☼ 1 |**G. Bless.**|**Road**  |**Red**  |**White**   |**Joy**  |**Girl** |**Sorrow**
+☼ 2 |Loss         |Alone     |L. Bless.|People      |Boy      |Together |Gain
+☼ 3 |White        |Joy       |Girl     |Sorrow      |L. Bless.|Road     |Red
+☼ 4 |People       |Boy       |White    |Joy         |Loss     |Alone    |G. Bless.
+☼ 5 |Alone        |G. Bless. |Road     |Boy         |White    |Joy      |Girl
+☼ 6 |Gain         |Loss      |D.'s Tail|G. Bless.   |People   |Boy      |Together
+☼ 7 |Red          |White     |Gain     |Girl        |Sorrow   |L. Bless.|Road
+☼ 8 |**L. Bless.**|**People**|**Boy**  |**Together**|**Gain** |**Loss** |**Alone**
+☼ 9 |Girl         |Sorrow    |G. Bless.|Road        |Red      |White    |Joy
+☼ 10|Together     |Gain      |Loss     |Alone       |G. Bless.|People   |Boy
+☼ 11|Road         |Red       |Together |Gain        |Girl     |Sorrow   |D.'s Tail
+☼ 12|Sorrow       |L. Bless. |People   |Red         |Together |Gain     |Loss
+☽ 1 |Joy          |Girl      |Sorrow   |L. Bless.   |Road     |Red      |White
+☽ 2 |Boy          |White     |Joy      |Loss        |Alone    |G. Bless.|Road
+☽ 3 |**G. Bless.**|**Road**  |**Red**  |**White**   |**Joy**  |**Girl** |**Sorrow**
+☽ 4 |Loss         |D.'s Tail |G. Bless.|People      |Boy      |Together |Gain
+☽ 5 |White        |Joy       |Girl     |Sorrow      |L. Bless.|Road     |Red
+☽ 6 |People       |Boy       |White    |Gain        |Loss     |Alone    |D.'s Head
+☽ 7 |Alone        |G. Bless. |Road     |Red         |White    |Joy      |Girl
+☽ 8 |Gain         |Loss      |Alone    |G. Bless.   |People   |Boy      |Together
+☽ 9 |Red          |Together  |Gain     |Girl        |Loss     |G. Bless.|People
+☽ 10|**L. Bless.**|**People**|D.'s Tail|**Together**|**Gain** |**Loss** |**Alone**
+☽ 11|Girl         |Alone     |L. Bless.|Road        |Red      |White    |Joy
+☽ 12|Together     |D.'s Head |Loss     |Alone       |G. Bless.|People   |Boy
+
+NOTE: Fludd notes that while two symbols are associated with each planet,
+one of the two is associated with direct and the other is associated with
+retrograde. I'll need to reconcile that...
