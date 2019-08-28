@@ -1,4 +1,10 @@
-These are the eight unique geomantic rings in lexicographic order:
+De Bruijn sequences may be used to describe "geomantic rings:" sequences of
+sixteen lines which contain all sixteen geomantic figures within them. In some
+sense, then, these rings represent the totality of human experience.
+
+There are two hundred and fifty six such strings, but most of these are
+symmetric. There are only eight unique geomantic rings; and here they are in
+lexicographic order:
 
     0000100110101111
     0000100111101011
@@ -12,14 +18,9 @@ These are the eight unique geomantic rings in lexicographic order:
 These sequences, joined in a loop, contain every geomantic figure within them
 and, in some sense, represent balance and the totality of human experience.
 
-Be cautious of breaking the loop and delineating individual figures within it:
-this usually removes the symmetry and causes the figure to become unbalanced.
-In fact, there is only one variation that preserves elemental symmetry when
-broken:
+One should be cautious of breaking the loop and delineating individual figures
+within it: there are only two possible combinations (barring symmetry) that
+contain elementally-balanced figures:
 
-    1110 (Dragon's Tail, Fire)
-    1011 (Girl, Air)
-    0000 (People, Water)
-    1001 (Union, Earth)
-
-(This is the lexicographically second ring, listed above.)
+    0010 1100 0011 1101
+    0011 0100 1011 1100
