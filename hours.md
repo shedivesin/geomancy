@@ -24,7 +24,3 @@ Hour|Sunday       |Monday    |Tuesday  |Wednesday   |Thursday |Friday   |Saturda
 ☽ 10|**L. Bless.**|**People**|D.'s Tail|**Together**|**Gain** |**Loss** |**Alone**
 ☽ 11|Girl         |Alone     |L. Bless.|Road        |Red      |White    |Joy
 ☽ 12|Together     |D.'s Head |Loss     |Alone       |G. Bless.|People   |Boy
-
-NOTE: Fludd notes that while two symbols are associated with each planet,
-one of the two is associated with direct and the other is associated with
-retrograde. I'll need to reconcile that...
