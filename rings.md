@@ -18,9 +18,6 @@ lexicographic order:
 These sequences, joined in a loop, contain every geomantic figure within them
 and, in some sense, represent balance and the totality of human experience.
 
-One should be cautious of breaking the loop and delineating individual figures
-within it: there are only two possible combinations (barring symmetry) that
-contain elementally-balanced figures:
-
-    0010 1100 0011 1101
-    0011 0100 1011 1100
+One should use caution in breaking the ring into four figures: only a small
+number of ways of doing this are elementally balanced, and further these
+depend greatly upon the system of elemental correspondences that you use.
