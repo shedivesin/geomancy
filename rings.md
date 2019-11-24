@@ -15,9 +15,6 @@ lexicographic order:
     0000101111010011
     0000110100101111
 
-These sequences, joined in a loop, contain every geomantic figure within them
-and, in some sense, represent balance and the totality of human experience.
-
 One should use caution in breaking the ring into four figures: only a small
 number of ways of doing this are elementally balanced, and further these
 depend greatly upon the system of elemental correspondences that you use.
