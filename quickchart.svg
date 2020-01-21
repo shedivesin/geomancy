@@ -8,34 +8,37 @@
 
   <script><![CDATA[
     const r = document.getElementsByTagName("svg")[0];
-    const e = (Math.random() * 0x10000) | 0;
-
-    function fig(x, y, bits) {
-      for(const bit of bits) {
+    function fig(x, y, b) {
+      for(let i = 0; i < 4; i++) {
         const e = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        e.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#" + bit);
+        e.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#" + ((b >> i) & 1));
         e.setAttribute("x", x);
-        e.setAttribute("y", y);
+        e.setAttribute("y", y + i * 4);
         r.appendChild(e);
-        y += 4;
       }
     }
 
-    function b(i) {
-      return (e >> i) & 1;
-    }
+    const x = crypto.getRandomValues(new Uint16Array(1))[0];
+    const a = (x >>  0) & 15;
+    const b = (x >>  4) & 15;
+    const c = (x >>  8) & 15;
+    const d = (x >> 12) & 15;
+    const e = ((x >> 0) & 1) | ((x >> 3) & 2) | ((x >> 6) & 4) | ((x >>  9) & 8);
+    const f = ((x >> 1) & 1) | ((x >> 4) & 2) | ((x >> 7) & 4) | ((x >> 10) & 8);
+    const g = ((x >> 2) & 1) | ((x >> 5) & 2) | ((x >> 8) & 4) | ((x >> 11) & 8);
+    const h = ((x >> 3) & 1) | ((x >> 6) & 2) | ((x >> 9) & 4) | ((x >> 12) & 8);
 
-    fig(19.5, 42.0, [b(0), b(1), b(2), b(3)]);
-    fig( 3.0, 66.5, [b(4), b(5), b(6), b(7)]);
-    fig(19.5, 82.0, [b(8), b(9), b(10), b(11)]);
-    fig(44.0, 66.5, [b(12), b(13), b(14), b(15)]);
-    fig(68.5, 82.0, [b(0), b(4), b(8), b(12)]);
-    fig(85.0, 66.5, [b(1), b(5), b(9), b(13)]);
-    fig(68.5, 42.0, [b(2), b(6), b(10), b(14)]);
-    fig(85.0, 17.5, [b(3), b(7), b(11), b(15)]);
-    fig(68.5,  2.0, [b(0) ^ b(4), b(1) ^ b(5), b(2) ^ b(6), b(3) ^ b(7)]);
-    fig(44.0, 17.5, [b(8) ^ b(12), b(9) ^ b(13), b(10) ^ b(14), b(11) ^ b(15)]);
-    fig(19.5,  2.0, [b(0) ^ b(1), b(4) ^ b(5), b(8) ^ b(9), b(12) ^ b(13)]);
-    fig( 3.0, 17.5, [b(2) ^ b(3), b(6) ^ b(7), b(10) ^ b(11), b(14) ^ b(15)]);
+    fig(19.5, 42.0, a);
+    fig( 3.0, 66.5, b);
+    fig(19.5, 82.0, c);
+    fig(44.0, 66.5, d);
+    fig(68.5, 82.0, e);
+    fig(85.0, 66.5, f);
+    fig(68.5, 42.0, g);
+    fig(85.0, 17.5, h);
+    fig(68.5,  2.0, a ^ b);
+    fig(44.0, 17.5, c ^ d);
+    fig(19.5,  2.0, e ^ f);
+    fig( 3.0, 17.5, g ^ h);
   ]]></script>
 </svg>
