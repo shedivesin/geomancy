@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <path id="0" d="M0 3 1 1H12L11 3Z"/>
+    <path id="1" d="M4 2 6 0 8 2 6 4Z" fill="crimson"/>
+  </defs>
+
+  <path d="M1 1H99V99H1ZM1 1 99 99M99 1 1 99M50 1 99 50 50 99 1 50Z" fill="white" stroke="black" stroke-width="2"/>
+
+  <script><![CDATA[
+    const r = document.getElementsByTagName("svg")[0];
+    const e = (Math.random() * 0x10000) | 0;
+
+    function fig(x, y, bits) {
+      for(const bit of bits) {
+        const e = document.createElementNS("http://www.w3.org/2000/svg", "use");
+        e.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#" + bit);
+        e.setAttribute("x", x);
+        e.setAttribute("y", y);
+        r.appendChild(e);
+        y += 4;
+      }
+    }
+
+    function b(i) {
+      return (e >> i) & 1;
+    }
+
+    fig(19.5, 42.0, [b(0), b(1), b(2), b(3)]);
+    fig( 3.0, 66.5, [b(4), b(5), b(6), b(7)]);
+    fig(19.5, 82.0, [b(8), b(9), b(10), b(11)]);
+    fig(44.0, 66.5, [b(12), b(13), b(14), b(15)]);
+    fig(68.5, 82.0, [b(0), b(4), b(8), b(12)]);
+    fig(85.0, 66.5, [b(1), b(5), b(9), b(13)]);
+    fig(68.5, 42.0, [b(2), b(6), b(10), b(14)]);
+    fig(85.0, 17.5, [b(3), b(7), b(11), b(15)]);
+    fig(68.5,  2.0, [b(0) ^ b(4), b(1) ^ b(5), b(2) ^ b(6), b(3) ^ b(7)]);
+    fig(44.0, 17.5, [b(8) ^ b(12), b(9) ^ b(13), b(10) ^ b(14), b(11) ^ b(15)]);
+    fig(19.5,  2.0, [b(0) ^ b(1), b(4) ^ b(5), b(8) ^ b(9), b(12) ^ b(13)]);
+    fig( 3.0, 17.5, [b(2) ^ b(3), b(6) ^ b(7), b(10) ^ b(11), b(14) ^ b(15)]);
+  ]]></script>
+</svg>
