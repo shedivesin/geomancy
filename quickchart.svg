@@ -7,32 +7,32 @@
   <path d="M1 1H99V99H1ZM1 1 99 99M99 1 1 99M50 1 99 50 50 99 1 50Z" fill="white" stroke="black" stroke-width="2"/>
 
   <script><![CDATA[
+    const m = crypto.getRandomValues(new Uint16Array(1))[0];
     const r = document.getElementsByTagName("svg")[0];
-    function fig(x, y, b) {
-      for(let i = 0; i < 4; i++) {
+
+    // Only the low 16 bits of m are set. So if b>=16, then (m>>b)=0, so the
+    // XOR does nothing.
+    function fig(x, y, s, a, b=16) {
+      for(let i = 0; i < 4; a += s, b += s, y += 4, i++) {
         const e = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        e.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#" + ((b >> i) & 1));
+        e.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#" + (((m >> a) ^ (m >> b)) & 1));
         e.setAttribute("x", x);
-        e.setAttribute("y", y + i * 4);
+        e.setAttribute("y", y);
         r.appendChild(e);
       }
     }
 
-    const m = crypto.getRandomValues(new Uint16Array(1))[0];
-    const d = ((m << 9) & 0x1000) ^ ((m << 6) & 0x2100) ^ ((m << 3) & 0x4210) ^ (m & 0x8421) ^ ((m >> 3) & 0x0842) ^ ((m >> 6) & 0x0084) ^ ((m >> 9) & 0x0008);
-    const n = (m & 0x000F) ^ ((m >> 4) & 0x00FF) ^ ((m >> 8) & 0x00F0) ^ ((d << 8) & 0x0F00) ^ ((d << 4) & 0xFF00) ^ (d & 0xF000);
-
-    fig(19.5, 42.0, m);
-    fig( 3.0, 66.5, m >> 4);
-    fig(19.5, 82.0, m >> 8);
-    fig(44.0, 66.5, m >> 12);
-    fig(68.5, 82.0, d);
-    fig(85.0, 66.5, d >> 4);
-    fig(68.5, 42.0, d >> 8);
-    fig(85.0, 17.5, d >> 12);
-    fig(68.5,  2.0, n);
-    fig(44.0, 17.5, n >> 4);
-    fig(19.5,  2.0, n >> 8);
-    fig( 3.0, 17.5, n >> 12);
+    fig(19.5, 42.0, 1,  0);
+    fig( 3.0, 66.5, 1,  4);
+    fig(19.5, 82.0, 1,  8);
+    fig(44.0, 66.5, 1, 12);
+    fig(68.5, 82.0, 4,  0);
+    fig(85.0, 66.5, 4,  1);
+    fig(68.5, 42.0, 4,  2);
+    fig(85.0, 17.5, 4,  3);
+    fig(68.5,  2.0, 1,  0,  4);
+    fig(44.0, 17.5, 1,  8, 12);
+    fig(19.5,  2.0, 4,  0,  1);
+    fig( 3.0, 17.5, 4,  2,  3);
   ]]></script>
 </svg>
